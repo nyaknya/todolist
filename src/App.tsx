@@ -20,6 +20,8 @@ function App() {
 	}, []);
 	const nowTime = new Date();
 
+	console.log(todoList);
+
 	const todoData = {
 		title: '예시데이터고',
 		description: '보내보겠습니다',

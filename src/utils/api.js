@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://simtodolist-env.eba-umgpwabw.ap-southeast-2.elasticbeanstalk.com/api/v1';
+const API_BASE_URL = process.env.REACT_APP_BASE_URL;
 
 export async function getTodoList() {
 	const response = await fetch(`${API_BASE_URL}/todo`);
